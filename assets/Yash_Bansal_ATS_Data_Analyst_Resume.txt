@@ -1,5 +1,5 @@
 YASH BANSAL
-yash08bansal@gmail.com | 9667329379 | linkedin.com/in/yash-bansal-b47035236 | github.com/Bansal-yash08 | github.com/Bansal-yash08/stock-market-project-
+yash08bansal@gmail.com | 9667329379 | linkedin.com/in/yash-bansal-b47035236 | bansal-yash08.github.io/yashbansal_portfolio | github.com/Bansal-yash08 | github.com/Bansal-yash08/stock-market-project-
 
 Entry-level Data Analyst and BCA Data Science student skilled in Python, SQL, Excel, Power BI, machine learning, dashboarding, data cleaning, and business insight generation. Built analytics projects across stock-market prediction, sales analysis, NLP text processing, and automated job scraping.
 
