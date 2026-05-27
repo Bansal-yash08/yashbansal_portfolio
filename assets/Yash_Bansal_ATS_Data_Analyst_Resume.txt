@@ -46,7 +46,7 @@ High School, D.A.V Public School | 2021
 - Percentage: 71%.
 
 CERTIFICATIONS
-- Deloitte Data Analytics Virtual Internship.
+- Deloitte Data Analytics Virtual Internship | Certificate: bansal-yash08.github.io/yashbansal_portfolio/assets/deloitte.pdf
 
 ADDITIONAL PORTFOLIO WORK
 - Titanic survival prediction, time-series analysis, R programming practice, HTML/CSS product website, and Excel customer/order/product dataset analysis.
