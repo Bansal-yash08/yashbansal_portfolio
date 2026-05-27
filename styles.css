@@ -469,9 +469,24 @@ circle {
   font-weight: 900;
 }
 
-.automation-visual {
+.automation-visual,
+.titanic-visual {
   gap: 10px;
   background: #fff7ef;
+}
+
+.titanic-visual {
+  grid-template-columns: repeat(2, 1fr);
+  background: #f1f8f6;
+}
+
+.titanic-visual span {
+  padding: 14px;
+  color: #0b665c;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 900;
 }
 
 .split,

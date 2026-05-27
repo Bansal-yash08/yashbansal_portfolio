@@ -97,7 +97,7 @@
           <button class="filter active" type="button" data-filter="all">All</button>
           <button class="filter" type="button" data-filter="analytics">Analytics</button>
           <button class="filter" type="button" data-filter="ml">Machine Learning</button>
-          <button class="filter" type="button" data-filter="automation">Automation</button>
+          <button class="filter" type="button" data-filter="nlp">NLP</button>
         </div>
 
         <div class="project-grid">
@@ -153,35 +153,38 @@
             </div>
           </article>
 
-          <article class="project" data-category="ml">
+          <article class="project" data-category="ml nlp">
             <div class="project-visual nlp-visual" aria-hidden="true">
-              <span>TF-IDF</span><span>Word2Vec</span><span>LDA</span><span>NLTK</span>
+              <span>IMDB 50K</span><span>YouTube API</span><span>TF-IDF</span><span>LSTM</span>
             </div>
             <div class="project-body">
-              <h3>NLP and Chatbot Projects</h3>
-              <p>Built rule-based chatbot flows and text-processing notebooks for similarity and topic modeling.</p>
+              <h3>NLP Sentiment Analysis</h3>
+              <p>Built sentiment workflows for IMDB movie reviews and YouTube comments using text cleaning, TF-IDF, classical ML, and deep learning.</p>
               <ul>
-                <li>Implemented tokenization, stopword removal, TF-IDF, cosine similarity, and Word2Vec vectors.</li>
-                <li>Logged chatbot conversations with timestamps for practical workflow tracking.</li>
+                <li>Processed Kaggle's 50,000-review IMDB dataset with regex cleaning, stopword removal, TF-IDF, Logistic Regression, and Multinomial Naive Bayes.</li>
+                <li>Fetched up to 100 YouTube comments, labeled sentiment with TextBlob, and compared Naive Bayes, SVM, and LSTM models.</li>
+                <li>Generated classification reports, confusion matrices, sentiment distributions, and custom review predictions.</li>
               </ul>
-              <div class="tags"><span>Python</span><span>NLTK</span><span>NLP</span></div>
+              <div class="tags"><span>Python</span><span>NLTK</span><span>TextBlob</span><span>SVM</span><span>LSTM</span></div>
             </div>
           </article>
 
-          <article class="project" data-category="automation">
-            <div class="project-visual automation-visual" aria-hidden="true">
-              <span>requests</span>
-              <span>BeautifulSoup</span>
-              <span>SMTP</span>
+          <article class="project" data-category="ml analytics">
+            <div class="project-visual titanic-visual" aria-hidden="true">
+              <span>EDA</span>
+              <span>CV Score</span>
+              <span>XGBoost</span>
+              <span>73.8%</span>
             </div>
             <div class="project-body">
-              <h3>Job Scraper Automation</h3>
-              <p>Python automation for collecting entry-level data analyst job titles and emailing results.</p>
+              <h3>Titanic Survival Prediction</h3>
+              <p>Machine-learning classification project for predicting passenger survival with EDA, cleaning, feature engineering, and model comparison.</p>
               <ul>
-                <li>Used Requests and BeautifulSoup to parse job listings.</li>
-                <li>Connected scraped output to email delivery with SMTP.</li>
+                <li>Explored survival patterns by age, fare, class, sex, family counts, embarkation, and ticket-related fields.</li>
+                <li>Handled missing values, log-transformed fare, label-encoded categorical fields, and prepared Kaggle-style submission output.</li>
+                <li>Compared Decision Tree, LightGBM, XGBoost, Random Forest, Extra Trees, and Logistic Regression with 5-fold cross-validation.</li>
               </ul>
-              <div class="tags"><span>Web Scraping</span><span>Automation</span><span>Python</span></div>
+              <div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>XGBoost</span><span>LightGBM</span></div>
             </div>
           </article>
         </div>
@@ -200,7 +203,7 @@
           <div><strong>Programming</strong><span>Python, SQL, R, Pandas, NumPy, Scikit-learn</span></div>
           <div><strong>Visualization</strong><span>Excel, Power BI, Plotly, Streamlit, charts, KPI views</span></div>
           <div><strong>Machine Learning</strong><span>Regression, classification, Random Forest, feature engineering</span></div>
-          <div><strong>Automation</strong><span>Git, GitHub, web scraping, Requests, BeautifulSoup, SMTP</span></div>
+          <div><strong>Platforms</strong><span>Git, GitHub, Google Colab, Kaggle datasets, YouTube Data API, YFinance</span></div>
         </div>
       </section>
 
@@ -221,7 +224,7 @@
             <time>2026</time>
             <div>
               <h3>Portfolio Projects</h3>
-              <p>Built and documented stock prediction, sales analysis, retail analysis, NLP, and automation projects.</p>
+              <p>Built and documented stock prediction, sales analysis, retail analysis, NLP sentiment analysis, and Titanic classification projects.</p>
             </div>
           </li>
           <li>
