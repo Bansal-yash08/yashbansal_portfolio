@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Yash Bansal portfolio: data analytics, Python, SQL, Excel, Power BI, Streamlit, machine learning, NLP, and business dashboards."
+    />
+    <title>yashbansal_portfolio | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Yash Bansal home">
+        <span class="brand-mark">YB</span>
+        <span>yashbansal_portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="assets/Yash_Bansal_ATS_Data_Analyst_Resume.docx" download>Resume</a>
+    </header>
+
+    <main id="home">
+      <section class="hero section-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Analyst Portfolio</p>
+          <h1>Turning raw datasets into dashboards, models, and business insight.</h1>
+          <p class="lead">
+            I am a BCA Data Science student focused on Python, SQL, Excel, Power BI, machine
+            learning, Streamlit dashboards, NLP, and automated analysis workflows.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#work">View Projects</a>
+            <a class="button secondary" href="mailto:yash08bansal@gmail.com">Contact Me</a>
+          </div>
+          <dl class="impact-strip" aria-label="Portfolio highlights">
+            <div>
+              <dt>219,800</dt>
+              <dd>stock records analyzed</dd>
+            </div>
+            <div>
+              <dt>197,430</dt>
+              <dd>food-order rows explored</dd>
+            </div>
+            <div>
+              <dt>106</dt>
+              <dd>Nifty stocks modeled</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="dashboard-preview" aria-label="Portfolio project preview">
+          <img class="preview-image" src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+          <div class="preview-header">
+            <span>Live Project Snapshot</span>
+            <strong>AI Stock Market Prediction</strong>
+          </div>
+          <div class="chart-card">
+            <div class="chart-top">
+              <span>RELIANCE</span>
+              <strong>Next Close Signal</strong>
+            </div>
+            <svg viewBox="0 0 520 230" role="img" aria-label="Line chart preview">
+              <defs>
+                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#2c7be5" stop-opacity="0.26" />
+                  <stop offset="100%" stop-color="#2c7be5" stop-opacity="0.02" />
+                </linearGradient>
+              </defs>
+              <path class="grid-line" d="M24 45H500M24 95H500M24 145H500M24 195H500" />
+              <path class="area" d="M30 178 L88 154 L142 166 L198 112 L255 128 L312 76 L372 92 L432 58 L492 68 L492 206 L30 206 Z" />
+              <path class="line" d="M30 178 L88 154 L142 166 L198 112 L255 128 L312 76 L372 92 L432 58 L492 68" />
+              <circle cx="432" cy="58" r="6" />
+              <circle cx="492" cy="68" r="6" />
+            </svg>
+            <div class="metric-row">
+              <span><b>7</b> charts</span>
+              <span><b>RF</b> model</span>
+              <span><b>Plotly</b> visuals</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects recruiters can understand quickly.</h2>
+        </div>
+
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="analytics">Analytics</button>
+          <button class="filter" type="button" data-filter="ml">Machine Learning</button>
+          <button class="filter" type="button" data-filter="automation">Automation</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project featured" data-category="ml analytics">
+            <img src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+            <div class="project-body">
+              <div class="project-title">
+                <h3>AI Stock Market Prediction System</h3>
+                <a href="https://github.com/Bansal-yash08/stock-market-project-" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <p>
+                Streamlit app for Nifty 500 analysis with login/signup, watchlists, admin dashboard,
+                Yahoo Finance updates, Random Forest models, and Plotly visual outputs.
+              </p>
+              <ul>
+                <li>219,800 historical rows across 106 stocks.</li>
+                <li>Feature engineering: returns, volatility, moving averages, EMA, lag values.</li>
+                <li>Prediction views: next close, direction, candlestick, volume, and trend charts.</li>
+              </ul>
+              <div class="tags">
+                <span>Python</span><span>Streamlit</span><span>Pandas</span><span>Scikit-learn</span><span>Plotly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-category="analytics">
+            <img src="assets/blinkit-analysis.png" alt="Blinkit sales analysis project screenshot" />
+            <div class="project-body">
+              <h3>Blinkit Retail Sales Analysis</h3>
+              <p>Explored outlet, item, sales, rating, visibility, and product-category data for business reporting.</p>
+              <ul>
+                <li>8,523 records across 12 business fields.</li>
+                <li>Prepared data for outlet and product performance comparisons.</li>
+              </ul>
+              <div class="tags"><span>Excel</span><span>EDA</span><span>Retail Analytics</span></div>
+            </div>
+          </article>
+
+          <article class="project" data-category="analytics">
+            <div class="project-visual table-visual" aria-hidden="true">
+              <span>Swiggy sales data</span>
+              <b>197,430 rows</b>
+              <small>city, restaurant, category, price, rating</small>
+            </div>
+            <div class="project-body">
+              <h3>Swiggy Sales Analysis</h3>
+              <p>Analyzed food-order data to identify city, category, restaurant, pricing, and rating patterns.</p>
+              <ul>
+                <li>Cleaned and structured a large Excel dataset for reporting.</li>
+                <li>Designed metrics for sales and restaurant-performance analysis.</li>
+              </ul>
+              <div class="tags"><span>Excel</span><span>Python</span><span>Business Analysis</span></div>
+            </div>
+          </article>
+
+          <article class="project" data-category="ml">
+            <div class="project-visual nlp-visual" aria-hidden="true">
+              <span>TF-IDF</span><span>Word2Vec</span><span>LDA</span><span>NLTK</span>
+            </div>
+            <div class="project-body">
+              <h3>NLP and Chatbot Projects</h3>
+              <p>Built rule-based chatbot flows and text-processing notebooks for similarity and topic modeling.</p>
+              <ul>
+                <li>Implemented tokenization, stopword removal, TF-IDF, cosine similarity, and Word2Vec vectors.</li>
+                <li>Logged chatbot conversations with timestamps for practical workflow tracking.</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>NLTK</span><span>NLP</span></div>
+            </div>
+          </article>
+
+          <article class="project" data-category="automation">
+            <div class="project-visual automation-visual" aria-hidden="true">
+              <span>requests</span>
+              <span>BeautifulSoup</span>
+              <span>SMTP</span>
+            </div>
+            <div class="project-body">
+              <h3>Job Scraper Automation</h3>
+              <p>Python automation for collecting entry-level data analyst job titles and emailing results.</p>
+              <ul>
+                <li>Used Requests and BeautifulSoup to parse job listings.</li>
+                <li>Connected scraped output to email delivery with SMTP.</li>
+              </ul>
+              <div class="tags"><span>Web Scraping</span><span>Automation</span><span>Python</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="skills">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2>Skills matched to data analyst roles.</h2>
+          <p class="section-copy">
+            The portfolio is written around recruiter keywords while still showing practical, project-based proof.
+          </p>
+        </div>
+        <div class="skill-list">
+          <div><strong>Analytics</strong><span>Data cleaning, EDA, reporting, dashboarding, business insights</span></div>
+          <div><strong>Programming</strong><span>Python, SQL, R, Pandas, NumPy, Scikit-learn</span></div>
+          <div><strong>Visualization</strong><span>Excel, Power BI, Plotly, Streamlit, charts, KPI views</span></div>
+          <div><strong>Machine Learning</strong><span>Regression, classification, Random Forest, feature engineering</span></div>
+          <div><strong>Automation</strong><span>Git, GitHub, web scraping, Requests, BeautifulSoup, SMTP</span></div>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Journey</p>
+          <h2>Education and practical growth.</h2>
+        </div>
+        <ol class="timeline-list">
+          <li>
+            <time>2023 - Present</time>
+            <div>
+              <h3>BCA in Data Science, Jagannath University</h3>
+              <p>Coursework: Python data analysis, machine learning, DSA, DBMS/NoSQL, software engineering, visualization, computer networks, operating systems, and digital image processing.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026</time>
+            <div>
+              <h3>Portfolio Projects</h3>
+              <p>Built and documented stock prediction, sales analysis, retail analysis, NLP, and automation projects.</p>
+            </div>
+          </li>
+          <li>
+            <time>Certificate</time>
+            <div>
+              <h3>Deloitte Data Analytics Virtual Internship</h3>
+              <p>Completed a data analytics virtual internship and added it as recruiter-facing proof of interest.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to data analyst internships and entry-level roles.</h2>
+          <p class="section-copy">
+            Best fit: data analyst, business analyst, BI analyst, Python analyst, and dashboard/reporting roles.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:yash08bansal@gmail.com">yash08bansal@gmail.com</a>
+          <a href="tel:+919667329379">9667329379</a>
+          <a href="https://www.linkedin.com/in/yash-bansal-b47035236" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a href="https://github.com/Bansal-yash08" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <button id="copyEmail" type="button">Copy Email</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Yash Bansal</span>
+      <span>Data Analyst Portfolio</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
