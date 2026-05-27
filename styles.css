@@ -421,6 +421,22 @@ circle {
   gap: 8px;
 }
 
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 120px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .tags span {
   padding: 6px 9px;
   color: #24415f;
@@ -637,6 +653,10 @@ circle {
   .project img,
   .project-visual {
     height: 220px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
   }
 
   .footer {
