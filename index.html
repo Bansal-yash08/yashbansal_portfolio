@@ -7,7 +7,7 @@
       name="description"
       content="Yash Bansal portfolio: data analytics, Python, SQL, Excel, Power BI, Streamlit, machine learning, NLP, and business dashboards."
     />
-    <title>yashbansal_portfolio | Data Analyst Portfolio</title>
+    <title>yashbansal_portfolio | Analytics & Data Science</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,22 +22,29 @@
         <a href="#timeline">Journey</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="assets/Yash_Bansal_ATS_Data_Analyst_Resume.docx" download>Resume</a>
+      <a class="nav-cta" href="#resumes">Resumes</a>
     </header>
 
     <main id="home">
       <section class="hero section-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Data Analyst Portfolio</p>
-          <h1>Turning raw datasets into dashboards, models, and business insight.</h1>
+          <p class="eyebrow">Analytics + Data Science Portfolio</p>
+          <h1>I turn messy data into clear stories, useful dashboards, and practical ML projects.</h1>
           <p class="lead">
-            I am a BCA Data Science student focused on Python, SQL, Excel, Power BI, machine
-            learning, Streamlit dashboards, NLP, and automated analysis workflows.
+            I am Yash, a BCA Data Science student building my path across both Data Analytics and
+            Data Science. I enjoy the full journey: cleaning raw datasets, finding the business
+            signal, building dashboards people can understand, and testing machine-learning models
+            when the problem needs prediction.
           </p>
           <div class="hero-actions" aria-label="Primary links">
             <a class="button primary" href="#work">View Projects</a>
-            <a class="button secondary" href="mailto:yash08bansal@gmail.com">Contact Me</a>
+            <a class="button secondary" href="#resumes">Download Resumes</a>
           </div>
+          <p class="role-note">
+            For analytics roles, my strongest work is Blinkit, Swiggy, and stock-market dashboards.
+            For data science roles, I show stock prediction, NLP sentiment analysis, and Titanic
+            survival modeling.
+          </p>
           <dl class="impact-strip" aria-label="Portfolio highlights">
             <div>
               <dt>219,800</dt>
@@ -55,7 +62,9 @@
         </div>
 
         <aside class="dashboard-preview" aria-label="Portfolio project preview">
-          <img class="preview-image" src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+          <button class="image-trigger preview-trigger" type="button" data-full-image="assets/stock-dashboard-preview.png" data-image-title="AI Stock Market Prediction Dashboard">
+            <img class="preview-image" src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+          </button>
           <div class="preview-header">
             <span>Live Project Snapshot</span>
             <strong>AI Stock Market Prediction</strong>
@@ -102,7 +111,9 @@
 
         <div class="project-grid">
           <article class="project featured" data-category="ml analytics">
-            <img src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+            <button class="image-trigger project-image-trigger" type="button" data-full-image="assets/stock-dashboard-preview.png" data-image-title="AI Stock Market Prediction Dashboard">
+              <img src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
+            </button>
             <div class="project-body">
               <div class="project-title">
                 <h3>AI Stock Market Prediction System</h3>
@@ -124,7 +135,9 @@
           </article>
 
           <article class="project" data-category="analytics">
-            <img src="assets/blinkit-sales-dashboard.png" alt="Blinkit sales dashboard with KPIs and charts" />
+            <button class="image-trigger project-image-trigger" type="button" data-full-image="assets/blinkit-sales-dashboard.png" data-image-title="Blinkit Retail Sales Dashboard">
+              <img src="assets/blinkit-sales-dashboard.png" alt="Blinkit sales dashboard with KPIs and charts" />
+            </button>
             <div class="project-body">
               <h3>Blinkit Retail Sales Analysis</h3>
               <p>Explored outlet, item, sales, rating, visibility, and product-category data for business reporting using the project's actual EDA workflow.</p>
@@ -134,15 +147,21 @@
                 <li>Visualized sales by item type, fat content, outlet tier, outlet size, location type, and establishment year.</li>
               </ul>
               <div class="project-gallery" aria-label="Blinkit analysis chart previews">
-                <img src="assets/blinkit-item-type-sales.png" alt="Blinkit top item types by sales chart" />
-                <img src="assets/blinkit-outlet-fat-content.png" alt="Blinkit outlet tier sales by fat content chart" />
+                <button class="image-trigger" type="button" data-full-image="assets/blinkit-item-type-sales.png" data-image-title="Blinkit Top Item Types by Sales">
+                  <img src="assets/blinkit-item-type-sales.png" alt="Blinkit top item types by sales chart" />
+                </button>
+                <button class="image-trigger" type="button" data-full-image="assets/blinkit-outlet-fat-content.png" data-image-title="Blinkit Outlet Tier by Fat Content">
+                  <img src="assets/blinkit-outlet-fat-content.png" alt="Blinkit outlet tier sales by fat content chart" />
+                </button>
               </div>
               <div class="tags"><span>Excel</span><span>EDA</span><span>Retail Analytics</span></div>
             </div>
           </article>
 
           <article class="project" data-category="analytics">
-            <img src="assets/swiggy-sales-dashboard.png" alt="Swiggy sales dashboard with revenue and city charts" />
+            <button class="image-trigger project-image-trigger" type="button" data-full-image="assets/swiggy-sales-dashboard.png" data-image-title="Swiggy Sales Dashboard">
+              <img src="assets/swiggy-sales-dashboard.png" alt="Swiggy sales dashboard with revenue and city charts" />
+            </button>
             <div class="project-body">
               <h3>Swiggy Sales Analysis</h3>
               <p>Analyzed food-order data to identify revenue trends, city performance, food-category mix, pricing, and rating patterns.</p>
@@ -152,8 +171,12 @@
                 <li>Segmented dishes into Veg and Non-Veg categories and ranked top states and top 5 cities by sales.</li>
               </ul>
               <div class="project-gallery" aria-label="Swiggy sales analysis chart previews">
-                <img src="assets/swiggy-top-cities.png" alt="Swiggy top 5 cities by sales chart" />
-                <img src="assets/swiggy-daily-revenue.png" alt="Swiggy daily revenue trend chart" />
+                <button class="image-trigger" type="button" data-full-image="assets/swiggy-top-cities.png" data-image-title="Swiggy Top Cities by Sales">
+                  <img src="assets/swiggy-top-cities.png" alt="Swiggy top 5 cities by sales chart" />
+                </button>
+                <button class="image-trigger" type="button" data-full-image="assets/swiggy-daily-revenue.png" data-image-title="Swiggy Daily Revenue Trend">
+                  <img src="assets/swiggy-daily-revenue.png" alt="Swiggy daily revenue trend chart" />
+                </button>
               </div>
               <div class="tags"><span>Excel</span><span>Python</span><span>Business Analysis</span></div>
             </div>
@@ -199,7 +222,7 @@
       <section class="section split" id="skills">
         <div>
           <p class="eyebrow">Capabilities</p>
-          <h2>Skills matched to data analyst roles.</h2>
+          <h2>Skills matched to analytics and data science roles.</h2>
           <p class="section-copy">
             The portfolio is written around recruiter keywords while still showing practical, project-based proof.
           </p>
@@ -210,6 +233,32 @@
           <div><strong>Visualization</strong><span>Excel, Power BI, Plotly, Streamlit, charts, KPI views</span></div>
           <div><strong>Machine Learning</strong><span>Regression, classification, Random Forest, feature engineering</span></div>
           <div><strong>Platforms</strong><span>Git, GitHub, Google Colab, Kaggle datasets, YouTube Data API, YFinance</span></div>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resumes">
+        <div class="section-heading">
+          <p class="eyebrow">Role-Specific Resumes</p>
+          <h2>Two resumes, two hiring signals.</h2>
+          <p class="section-copy">
+            I keep separate resumes because analytics recruiters usually want proof of dashboards,
+            KPIs, Excel, SQL, and business reporting, while data science recruiters look for Python,
+            modeling, NLP, feature engineering, and evaluation metrics.
+          </p>
+        </div>
+        <div class="resume-grid">
+          <article class="resume-card">
+            <span>Data Analytics</span>
+            <h3>Dashboards, KPIs, reporting, and business insight</h3>
+            <p>Blinkit, Swiggy, stock-market analytics dashboard, Excel-style business datasets.</p>
+            <a class="button primary" href="assets/Yash_Bansal_Data_Analytics_ATS_Resume.docx" download>Download Analytics Resume</a>
+          </article>
+          <article class="resume-card">
+            <span>Data Science</span>
+            <h3>Machine learning, NLP, prediction, and model evaluation</h3>
+            <p>Stock prediction, NLP sentiment analysis, Titanic classification, EDA foundations.</p>
+            <a class="button primary" href="assets/Yash_Bansal_Data_Science_ATS_Resume.docx" download>Download Data Science Resume</a>
+          </article>
         </div>
       </section>
 
@@ -227,7 +276,7 @@
             </div>
           </li>
           <li>
-            <time>2026</time>
+            <time>Projects</time>
             <div>
               <h3>Portfolio Projects</h3>
               <p>Built and documented stock prediction, sales analysis, retail analysis, NLP sentiment analysis, and Titanic classification projects.</p>
@@ -247,9 +296,10 @@
       <section class="section contact-section" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Open to data analyst internships and entry-level roles.</h2>
+          <h2>Open to data analytics and data science internships or entry-level roles.</h2>
           <p class="section-copy">
-            Best fit: data analyst, business analyst, BI analyst, Python analyst, and dashboard/reporting roles.
+            Best fit: data analyst, business analyst, BI analyst, Python analyst, junior data scientist,
+            and machine-learning project roles.
           </p>
         </div>
         <div class="contact-card">
@@ -257,6 +307,8 @@
           <a href="tel:+919667329379">9667329379</a>
           <a href="https://www.linkedin.com/in/yash-bansal-b47035236" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           <a href="https://github.com/Bansal-yash08" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="assets/Yash_Bansal_Data_Analytics_ATS_Resume.docx" download>Data Analytics Resume</a>
+          <a href="assets/Yash_Bansal_Data_Science_ATS_Resume.docx" download>Data Science Resume</a>
           <a href="assets/deloitte.pdf" target="_blank" rel="noreferrer">Deloitte Certificate</a>
           <button id="copyEmail" type="button">Copy Email</button>
         </div>
@@ -265,8 +317,17 @@
 
     <footer class="footer">
       <span>Yash Bansal</span>
-      <span>Data Analyst Portfolio</span>
     </footer>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <div class="image-modal__panel" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+        <div class="image-modal__top">
+          <h3 id="imageModalTitle">Project image</h3>
+          <button class="image-modal__close" type="button" aria-label="Close image preview">Close</button>
+        </div>
+        <img id="imageModalImg" src="" alt="" />
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

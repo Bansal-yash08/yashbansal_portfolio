@@ -29,3 +29,49 @@ copyEmail?.addEventListener("click", async () => {
     window.location.href = `mailto:${email}`;
   }
 });
+
+const imageModal = document.querySelector("#imageModal");
+const imageModalImg = document.querySelector("#imageModalImg");
+const imageModalTitle = document.querySelector("#imageModalTitle");
+const imageModalClose = document.querySelector(".image-modal__close");
+const imageTriggers = document.querySelectorAll(".image-trigger");
+
+function openImageModal(src, title, alt) {
+  if (!imageModal || !imageModalImg || !imageModalTitle) return;
+  imageModalImg.src = src;
+  imageModalImg.alt = alt || title || "Project image";
+  imageModalTitle.textContent = title || "Project image";
+  imageModal.classList.add("open");
+  imageModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  imageModalClose?.focus();
+}
+
+function closeImageModal() {
+  if (!imageModal || !imageModalImg) return;
+  imageModal.classList.remove("open");
+  imageModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  imageModalImg.src = "";
+}
+
+imageTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const img = trigger.querySelector("img");
+    openImageModal(trigger.dataset.fullImage || img?.src, trigger.dataset.imageTitle, img?.alt);
+  });
+});
+
+imageModalClose?.addEventListener("click", closeImageModal);
+
+imageModal?.addEventListener("click", (event) => {
+  if (event.target === imageModal) {
+    closeImageModal();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && imageModal?.classList.contains("open")) {
+    closeImageModal();
+  }
+});
