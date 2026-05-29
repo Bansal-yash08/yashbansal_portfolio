@@ -17,8 +17,10 @@
         <span>yashbansal_portfolio</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
         <a href="#work">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#resumes">Resumes</a>
         <a href="#timeline">Journey</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -61,39 +63,45 @@
           </dl>
         </div>
 
-        <aside class="dashboard-preview" aria-label="Portfolio project preview">
+        <aside class="dashboard-preview hero-console" aria-label="Portfolio project preview">
           <button class="image-trigger preview-trigger" type="button" data-full-image="assets/stock-dashboard-preview.png" data-image-title="AI Stock Market Prediction Dashboard">
             <img class="preview-image" src="assets/stock-dashboard-preview.png" alt="AI stock market prediction dashboard preview" />
           </button>
-          <div class="preview-header">
-            <span>Live Project Snapshot</span>
-            <strong>AI Stock Market Prediction</strong>
-          </div>
-          <div class="chart-card">
-            <div class="chart-top">
-              <span>RELIANCE</span>
-              <strong>Next Close Signal</strong>
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <strong>yash@portfolio</strong>
             </div>
-            <svg viewBox="0 0 520 230" role="img" aria-label="Line chart preview">
-              <defs>
-                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#2c7be5" stop-opacity="0.26" />
-                  <stop offset="100%" stop-color="#2c7be5" stop-opacity="0.02" />
-                </linearGradient>
-              </defs>
-              <path class="grid-line" d="M24 45H500M24 95H500M24 145H500M24 195H500" />
-              <path class="area" d="M30 178 L88 154 L142 166 L198 112 L255 128 L312 76 L372 92 L432 58 L492 68 L492 206 L30 206 Z" />
-              <path class="line" d="M30 178 L88 154 L142 166 L198 112 L255 128 L312 76 L372 92 L432 58 L492 68" />
-              <circle cx="432" cy="58" r="6" />
-              <circle cx="492" cy="68" r="6" />
-            </svg>
-            <div class="metric-row">
-              <span><b>7</b> charts</span>
-              <span><b>RF</b> model</span>
-              <span><b>Plotly</b> visuals</span>
+            <div class="terminal-body">
+              <p><b>&gt;</b> current_focus</p>
+              <p class="terminal-output">Data Analytics + Data Science roles</p>
+              <p><b>&gt;</b> strongest_projects</p>
+              <p class="terminal-output">Blinkit, Swiggy, Stock Prediction, NLP, Titanic ML</p>
+              <p><b>&gt;</b> status</p>
+              <p class="terminal-output ready">Open to internships and entry-level roles</p>
             </div>
           </div>
         </aside>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow">About Me</p>
+            <h2>A student who likes both sides of data: the business story and the model behind it.</h2>
+            <p class="section-copy">
+              I like working with real datasets because they are never perfect. My projects usually start
+              with cleaning and understanding the data, then move into charts, KPIs, dashboards, or models.
+              That is why this portfolio is built for two paths: Data Analytics roles and Data Science roles.
+            </p>
+          </div>
+          <div class="quick-facts">
+            <div><strong>Best analytics proof</strong><span>Blinkit, Swiggy, stock-market dashboards</span></div>
+            <div><strong>Best data science proof</strong><span>Stock prediction, NLP sentiment, Titanic ML</span></div>
+            <div><strong>Current degree</strong><span>BCA Data Science, Jagannath University</span></div>
+            <div><strong>What I am improving</strong><span>SQL, Power BI, ML evaluation, project storytelling</span></div>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="work">
@@ -227,12 +235,17 @@
             The portfolio is written around recruiter keywords while still showing practical, project-based proof.
           </p>
         </div>
-        <div class="skill-list">
-          <div><strong>Analytics</strong><span>Data cleaning, EDA, reporting, dashboarding, business insights</span></div>
-          <div><strong>Programming</strong><span>Python, SQL, R, Pandas, NumPy, Scikit-learn</span></div>
-          <div><strong>Visualization</strong><span>Excel, Power BI, Plotly, Streamlit, charts, KPI views</span></div>
-          <div><strong>Machine Learning</strong><span>Regression, classification, Random Forest, feature engineering</span></div>
-          <div><strong>Platforms</strong><span>Git, GitHub, Google Colab, Kaggle datasets, YouTube Data API, YFinance</span></div>
+        <div class="skill-panel">
+          <div class="skill-meter-list">
+            <div><label>Data Cleaning + EDA <span>90%</span></label><i style="--w:90%"></i></div>
+            <div><label>Dashboards + KPI Reporting <span>85%</span></label><i style="--w:85%"></i></div>
+            <div><label>Python ML Projects <span>80%</span></label><i style="--w:80%"></i></div>
+            <div><label>NLP + Classification <span>72%</span></label><i style="--w:72%"></i></div>
+          </div>
+          <div class="tech-cloud">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Excel</span><span>Power BI</span>
+            <span>Streamlit</span><span>Plotly</span><span>Scikit-learn</span><span>NLP</span><span>XGBoost</span><span>GitHub</span>
+          </div>
         </div>
       </section>
 
@@ -259,6 +272,20 @@
             <p>Stock prediction, NLP sentiment analysis, Titanic classification, EDA foundations.</p>
             <a class="button primary" href="assets/Yash_Bansal_Data_Science_ATS_Resume.docx" download>Download Data Science Resume</a>
           </article>
+        </div>
+      </section>
+
+      <section class="section learning-section" id="learning">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Log</p>
+          <h2>What I am building next.</h2>
+          <p class="section-copy">A portfolio should show direction, not just completed files. These are the areas I am actively improving.</p>
+        </div>
+        <div class="learning-grid">
+          <article><span>Done</span><h3>EDA + KPI Dashboards</h3><p>Blinkit and Swiggy analysis with clean business visuals.</p></article>
+          <article><span>Done</span><h3>Machine Learning Basics</h3><p>Classification, regression, cross-validation, and model comparison.</p></article>
+          <article><span>Improving</span><h3>SQL + Power BI</h3><p>Preparing for analyst interviews with stronger database and BI storytelling.</p></article>
+          <article><span>Next</span><h3>Deployment + Case Studies</h3><p>Turning every major project into a short, recruiter-friendly case study.</p></article>
         </div>
       </section>
 
