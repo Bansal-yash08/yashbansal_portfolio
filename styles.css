@@ -85,12 +85,16 @@ a {
 .nav-cta,
 .button,
 .project-title a,
+.project-actions a,
+.proof-links a,
 .contact-card a {
   text-decoration: none;
 }
 
 .nav a:hover,
 .project-title a:hover,
+.project-actions a:hover,
+.proof-links a:hover,
 .contact-card a:hover {
   color: var(--blue);
 }
@@ -446,6 +450,50 @@ circle {
   font-size: 14px;
 }
 
+.recruiter-strip {
+  background: #101826;
+  color: #ffffff;
+}
+
+.recruiter-strip .section-heading h2 {
+  color: #ffffff;
+}
+
+.recruiter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.recruiter-grid article {
+  min-height: 210px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.recruiter-grid span {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: #70d6ff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.recruiter-grid strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.recruiter-grid p {
+  color: #b9c6d6;
+}
+
 .section-heading {
   max-width: 820px;
   margin-bottom: 26px;
@@ -608,6 +656,34 @@ circle {
   font-weight: 800;
 }
 
+.project-actions,
+.proof-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.project-actions a,
+.proof-links a {
+  display: inline-flex;
+  justify-content: center;
+  padding: 9px 12px;
+  color: #17202a;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.project-actions a:first-child,
+.proof-links a:first-child {
+  color: #ffffff;
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
 .table-visual,
 .nlp-visual,
 .automation-visual {
@@ -665,6 +741,45 @@ circle {
   border: 1px solid var(--line);
   border-radius: 8px;
   font-weight: 900;
+}
+
+.case-study-section {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.case-study-grid article {
+  padding: 20px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.case-study-grid span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 6px 9px;
+  color: #24415f;
+  background: #eaf2ff;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.case-study-grid p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.case-study-grid p strong {
+  color: var(--ink);
 }
 
 .split,
@@ -749,6 +864,49 @@ circle {
   font-weight: 900;
 }
 
+.github-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: center;
+  background: #ffffff;
+}
+
+.github-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.github-cards article {
+  min-height: 180px;
+  padding: 20px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.github-cards span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.github-cards strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.github-cards p {
+  color: var(--muted);
+}
+
 .resume-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -781,6 +939,48 @@ circle {
 
 .resume-card .button {
   margin-top: 8px;
+}
+
+.certificate-section {
+  background: #101826;
+  color: #ffffff;
+}
+
+.certificate-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.6fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: center;
+}
+
+.certificate-card h2 {
+  color: #ffffff;
+}
+
+.certificate-card .section-copy {
+  color: #b9c6d6;
+}
+
+.certificate-proof {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.certificate-proof span {
+  color: #f9c74f;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.certificate-proof strong {
+  font-size: 22px;
+  line-height: 1.2;
 }
 
 .learning-section {
@@ -953,7 +1153,18 @@ circle {
     grid-template-columns: 1fr;
   }
 
+  .recruiter-grid,
+  .case-study-grid,
   .resume-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .github-section,
+  .certificate-card {
+    grid-template-columns: 1fr;
+  }
+
+  .github-cards {
     grid-template-columns: 1fr;
   }
 
@@ -991,6 +1202,8 @@ circle {
 
   .impact-strip,
   .quick-facts,
+  .recruiter-grid,
+  .case-study-grid,
   .timeline-list li,
   .learning-grid {
     grid-template-columns: 1fr;
