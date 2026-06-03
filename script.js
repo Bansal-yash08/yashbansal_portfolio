@@ -75,3 +75,26 @@ document.addEventListener("keydown", (event) => {
     closeImageModal();
   }
 });
+
+const tiltCards = document.querySelectorAll(".tilt-card");
+const canTilt = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+function resetTilt(card) {
+  card.style.setProperty("--tilt-x", "0deg");
+  card.style.setProperty("--tilt-y", "0deg");
+}
+
+if (canTilt.matches) {
+  tiltCards.forEach((card) => {
+    card.addEventListener("mousemove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+
+      card.style.setProperty("--tilt-x", `${(-y * 6).toFixed(2)}deg`);
+      card.style.setProperty("--tilt-y", `${(x * 8).toFixed(2)}deg`);
+    });
+
+    card.addEventListener("mouseleave", () => resetTilt(card));
+  });
+}
