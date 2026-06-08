@@ -1071,6 +1071,10 @@ circle {
   gap: 18px;
 }
 
+.single-resume-grid {
+  grid-template-columns: minmax(0, 680px);
+}
+
 .resume-card {
   padding: 24px;
   background: #ffffff;
@@ -1097,6 +1101,7 @@ circle {
 
 .resume-card .button {
   margin-top: 8px;
+  margin-right: 8px;
 }
 
 .certificate-section {
