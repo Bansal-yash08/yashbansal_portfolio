@@ -1124,6 +1124,11 @@ circle {
   color: #b9c6d6;
 }
 
+.certificate-list {
+  display: grid;
+  gap: 14px;
+}
+
 .certificate-proof {
   display: grid;
   gap: 12px;
